@@ -18,48 +18,63 @@
           <li><a href="#">Menu</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Order</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="catering.html">Contact</a></li>
           <li><a href="#">Catering</a></li>
-          <li><a href="#">Reviews</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
         </div>
       </ul>
     </header>
     <div id="img-slider-div">
-      <img
-        src="https://images.pexels.com/photos/1028704/pexels-photo-1028704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        alt="Cupcake Photo"
-      />
+      <div id="slider-outer">
+        <img
+          src="https://www.pinclipart.com/picdir/middle/521-5215772_transparent-left-arrow-png-left-arrow-black-and.png"
+          class="arrow"
+          id="prev-arrow"
+          alt="left arrow"
+        />
+        <div id="slider-images">
+          <img
+            src="https://images.pexels.com/photos/1028704/pexels-photo-1028704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="Cupcake Photo"
+            class="active"
+          />
+          <img
+            src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2021%2F12%2F20%2Fchocolate-cupcakes-FT-RECIPE1221.jpg"
+            alt="Chocolate Cupcake"
+          />
+        </div>
+        <img
+          src="https://www.pngfind.com/pngs/m/302-3023323_arrow-pointing-to-right-comments-right-arrow-png.png"
+          class="arrow"
+          id="next-arrow"
+          alt="right arrow"
+        />
+      </div>
     </div>
     <div id="info-div">
-      <div id="flavors-info">
-        <div class="info-container">
-          <h1 class="info-header">Flavors</h1>
-          <img
-            src="https://icons-for-free.com/iconfiles/png/512/mountains+photo+photos+placeholder+sun+icon-1320165661388177228.png"
-            alt="placeholder icon"
-          />
-          <h2>Select from a wide selection of flavors.</h2>
-        </div>
+      <div class="info-container" id="flavors-info">
+        <h1 class="info-header">Flavors</h1>
+        <img
+          src="https://icons-for-free.com/iconfiles/png/512/mountains+photo+photos+placeholder+sun+icon-1320165661388177228.png"
+          alt="placeholder icon"
+        />
+        <h2>Select from a wide selection of flavors.</h2>
       </div>
-      <div id="delivery-info">
-        <div class="info-container">
-          <h1 class="info-header">Fast Delivery</h1>
-          <img
-            src="https://icons-for-free.com/iconfiles/png/512/mountains+photo+photos+placeholder+sun+icon-1320165661388177228.png"
-            alt="placeholder icon"
-          />
-          <h2>The fastest delivery in the business</h2>
-        </div>
+      <div class="info-container" id="delivery-info">
+        <h1 class="info-header">Fast Delivery</h1>
+        <img
+          src="https://icons-for-free.com/iconfiles/png/512/mountains+photo+photos+placeholder+sun+icon-1320165661388177228.png"
+          alt="placeholder icon"
+        />
+        <h2>The fastest delivery in the business</h2>
       </div>
-      <div id="quality-info">
-        <div class="info-container">
-          <h1 class="info-header">Consistent Quality</h1>
-          <img
-            src="https://icons-for-free.com/iconfiles/png/512/mountains+photo+photos+placeholder+sun+icon-1320165661388177228.png"
-            alt="placeholder icon"
-          />
-          <h2>Freshness you can expect.</h2>
-        </div>
+      <div class="info-container" id="quality-info">
+        <h1 class="info-header">Consistent Quality</h1>
+        <img
+          src="https://icons-for-free.com/iconfiles/png/512/mountains+photo+photos+placeholder+sun+icon-1320165661388177228.png"
+          alt="placeholder icon"
+        />
+        <h2>Freshness you can expect.</h2>
       </div>
     </div>
     <footer id="footer">
@@ -71,5 +86,7 @@
         <li class="footer-item">Privacy</li>
       </ul>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
