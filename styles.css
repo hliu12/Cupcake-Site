@@ -1,6 +1,6 @@
 #header {
   height: 75px;
-  background-color: pink;
+  background-color: lightblue;
 }
 
 #header-list {
@@ -23,7 +23,7 @@
 #img-slider-div {
   display: flex;
   height: 550px;
-  background-color: lightblue;
+  background-color: pink;
   justify-content: center;
 }
 
