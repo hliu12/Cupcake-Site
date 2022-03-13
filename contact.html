@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #form {
+            display: flex;
+            justify-content: center;
+        }
+
+        textarea {
+            resize: none;
+            width: 600px;
+            height: 300px;
+        }
+
+        ::placeholder {
+            font-family: Arial;
+        }
+
+        #messageLabel {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <ul id="header-list">
+          <div id="logo">
+            <a href="index.html">Logo or Pic</a>
+          </div>
+          <div id="header-items">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Reviews</a></li>
+          </div>
+        </ul>
+    </header>
+
+    <h1><strong>Got Questions?</strong></h1>
+
+    <div id="form">
+        <form action="email.php" onsubmit="return validate();">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your preferred name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email address"><br><br>
+
+            <label for="message" id="messageLabel">Message:</label>
+            <textarea id="message" placeholder="Your message here..."></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function validate() {
+            if (document.getElementById("name").value == "") {
+                alert("Please give us your name!");
+                return false;
+            }
+            else if (document.getElementById("email").value == "") {
+                alert("Cannot contact us without a sender email address!");
+                return false;
+            }
+            else if (document.getElementById("message").value == "") {
+                alert("Cannot send blank message!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
