@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: HayashiSerif;
-    src: url(HayashiSerif-WydLn.ttf);
+    font-family: Hyogo;
+    src: url(Hyogo-Black.otf);
 }
 
 #header {
@@ -19,6 +19,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: SnappyDresser, sans-serif;
 }
 
 #header-items {
@@ -65,13 +78,13 @@
 
 .everyday {
     color: #81D8D0;
-    font-family: HayashiSerif, sans-serif;
+    font-family: Hyogo, sans-serif;
     display: flex;
     justify-content: center;
 }
 
 .price-header {
-    font-family: HayashiSerif, sans-serif;
+    font-family: Hyogo, sans-serif;
 }
 
 .images {
@@ -122,12 +135,12 @@
 }
 
 .flavor {
-    font-family: HayashiSerif, sans-serif;
+    font-family: SnappyDresser, sans-serif;
     margin: 10px;
 }
 
 .price {
-    font-family: HayashiSerif, sans-serif;
+    font-family: Hyogo, sans-serif;
     color:#704214;
 }
 

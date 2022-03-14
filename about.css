@@ -5,15 +5,9 @@
 }
 
 @font-face {
-    font-family: HayashiSerif;
-    src: url(HayashiSerif-WydLn.ttf);
+    font-family: Hyogo;
+    src: url(Hyogo-regular.otf);
 }
-
-/* body {
-    background-image: url(cupcake_tray.jpg);
-    background-size: 80%;
-
-} */
 
 * {
     margin: 0px;
@@ -23,7 +17,6 @@
 #header {
     height: 75px;
     background-color: lightblue;
-
 }
 
 #header-list {
@@ -33,9 +26,22 @@
     align-items: center;
 }
 
+#logo {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+}
+
 #header-items {
     display: flex;
     justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: SnappyDresser, sans-serif;
 }
 
 #header-items li {
@@ -79,10 +85,11 @@
 .statement {
     display: flex;
     justify-self: center;
+    font-size: 18px;
     width: 100%;
     max-width: 800px;
     text-align: center;
-    font-family: HayashiSerif, sans-serif;
+    font-family: Hyogo, sans-serif;
 }
 
 
