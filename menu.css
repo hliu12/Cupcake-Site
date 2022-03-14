@@ -9,6 +9,10 @@
     src: url(Hyogo-Black.otf);
 }
 
+body {
+    background-color: #FFF0F5;
+}
+
 #header {
     height: 75px;
     background-color: lightblue;
