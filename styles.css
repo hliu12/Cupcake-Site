@@ -160,6 +160,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  vertical-align: center;
+  font-family: SnappyDresser;
   text-align: center;
 }
 
