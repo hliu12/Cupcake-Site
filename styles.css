@@ -8,6 +8,16 @@
   src: url(SnappyDresserRegular-L35nG.ttf);
 }
 
+@font-face {
+    font-family: Hyogo;
+    src: url(Hyogo-Black.otf);
+}
+
+@font-face {
+    font-family: HyogoRegular;
+    src: url(Hyogo-regular.otf);
+}
+
 #header {
   height: 75px;
   background-color: lightblue;
@@ -103,7 +113,7 @@
   margin-top: 80px;
 }
 
-#slider-images {
+#slider-images
   border: 1px solid black;
   position: relative;
   overflow: hidden;
@@ -156,7 +166,13 @@
 
 #footer {
   height: 50px;
-  background-color: lightgray;
+  background-color: lightblue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  vertical-align: center;
+  font-family: HyogoRegular;
+  text-align: center;
 }
 
 #footer-list {
