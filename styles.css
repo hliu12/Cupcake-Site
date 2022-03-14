@@ -54,12 +54,36 @@ html {
 
 .arrow {
   width: 50px;
+  cursor: pointer;
+}
+
+#prev-arrow,
+#next-arrow {
+  float: left;
+  margin-top: 180px;
+  z-index: 100;
+}
+
+#prev-arrow {
+  position: relative;
+  margin-right: -15px;
+}
+
+#next-arrow {
+  /* float: right; */
+  position: relative;
+  margin-left: -15px;
+}
+
+#slider-outer {
+  margin-top: 80px;
 }
 
 #slider-images {
   border: 1px solid black;
   position: relative;
   overflow: hidden;
+  float: left;
 }
 
 #slider-images img {
@@ -67,8 +91,8 @@ html {
   flex-shrink: 0;
   /* min-width: 100%; */
   /* min-height: 100%; */
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 400px;
 }
 
 #slider-images img.active {
