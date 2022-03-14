@@ -1,212 +1,221 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html>
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="utf-8">
     <title>Order Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <style>
-      h1 {
-        text-align: center;
-      }
+        *{margin: 0; padding: 0;}
 
-      #formContainer {
-        display: flex;
-        justify-content: center;
-      }
+        body {
+            background-image: url(orderbackground.png);
+            background-size: cover;
+        }
 
-      .responsive {
-        width: 100%;
-        height: auto;
-      }
+        #formContainer {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
 
-      #form {
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-        text-align: center;
-        align-items: center;
-        border: 1px solid black;
-      }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
 
-      .group {
-        margin: 10px;
-      }
+        #form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            text-align: center;
+            align-items: center;
+            border: 1px solid black;
+            background: white;
+        }
 
-      input {
-        width: 50px;
-      }
+        .group {
+            margin: 10px;
+        }
 
-      #submit {
-        margin-bottom: 10px;
-        width: 300px;
-      }
+        input {
+            width: 50px;
+        }
 
-      #resultsContainer {
-        padding-top: 20px;
-        text-align: center;
-        justify-content: center;
-      }
+        #submit {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        #billing {
+            font-weight: bolder;
+        }
+
+        #resultsContainer {
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <header id="header">
-      <ul id="header-list">
-        <div id="logo">
-          <a href="index.html">Logo or Pic</a>
-        </div>
-        <div id="header-items">
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="order.html">Order</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="catering.html">Catering</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-        </div>
-      </ul>
+        <ul id="header-list">
+          <div id="logo">
+            <a href="index.html">Logo or Pic</a>
+          </div>
+          <div id="header-items">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Reviews</a></li>
+          </div>
+        </ul>
     </header>
-
-    <h1><strong>Order Form</strong></h1>
-
+      
     <div id="formContainer" class="responsive">
-      <form id="form">
-        <div class="group">
-          <label for="pickup">Pickup Time: </label>
-          <select name="pickup" id="pickup">
-            <option
-              selected
-              disbled
-              hidden
-              style="display: none"
-              value=""
-            ></option>
-            <option value="10 AM">10 AM</option>
-            <option value="3 PM">3 PM</option>
-            <option value="6 PM">6 PM</option>
-          </select>
-        </div>
+        <form id="form">
+            <h1><strong>Order Form</strong></h1>
+            <div class="group">
+                <label for="pickup">Pickup Time: </label>
+                <select name="pickup" id="pickup">
+                    <option selected disbled hidden style='display: none' value = ''></option>
+                    <option value="10 AM">10 AM</option>
+                    <option value="3 PM">3 PM</option>
+                    <option value="6 PM">6 PM</option>
+                </select>
+            </div>
 
-        <div class="group">
-          <label for="vanilla">Tahitian Vanilla ($3.75 ea)</label>
-          <input type="number" name="Tahitian Vanilla" id="vanilla" />
-        </div>
+            <div class="group">
+                <label for="vanilla">Tahitian Vanilla ($3.75 ea)</label>
+                <input type="number" name="Tahitian Vanilla" id="vanilla">
+            </div>
 
-        <div class="group">
-          <label for="velvet">Red Velvet ($3.75 ea)</label>
-          <input type="number" name="Red Velvet" id="velvet" />
-        </div>
+            <div class="group">
+                <label for="velvet">Red Velvet ($3.75 ea)</label>
+                <input type="number" name="Red Velvet" id="velvet">
+            </div>
 
-        <div class="group">
-          <label for="creme">Crème Brûlée ($3.75 ea)</label>
-          <input type="number" name="Crème Brûlée" id="creme" />
-        </div>
+            <div class="group">
+                <label for="creme">Crème Brûlée ($3.75 ea)</label>
+                <input type="number" name="Crème Brûlée" id="creme">
+            </div>
 
-        <div class="group">
-          <label for="cookies">Cookies and Cream ($3.75 ea)</label>
-          <input type="number" name="Cookies and Cream" id="cookies" />
-        </div>
+            <div class="group">
+                <label for="cookies">Cookies and Cream ($3.75 ea)</label>
+                <input type="number" name="Cookies and Cream" id="cookies">
+            </div>
 
-        <div class="group">
-          <label for="caramel">Salted Caramel ($3.75 ea)</label>
-          <input type="number" name="Salted Caramel" id="caramel" />
-        </div>
+            <div class="group">
+                <label for="caramel">Salted Caramel ($3.75 ea)</label>
+                <input type="number" name="Salted Caramel" id="caramel">     
+            </div> 
 
-        <div class="group">
-          <label for="strawberry">Strawberry ($3.75 ea)</label>
-          <input type="number" name="Strawberry" id="strawberry" />
-        </div>
+            <div class="group">
+                <label for="strawberry">Strawberry ($3.75 ea)</label>
+                <input type="number" name="Strawberry" id="strawberry">
+            </div>
 
-        <div class="group">
-          <label for="lemon">Lemon and Honey ($4.25 ea)</label>
-          <input type="number" name="Lemon and Honey" id="lemon" />
-        </div>
+            <div class="group">
+                <label for="lemon">Lemon and Honey ($4.25 ea)</label>
+                <input type="number" name="Lemon and Honey" id="lemon">
+            </div>
+            
+            <div class="group">
+                <label for="chocolate">Chocolate ($4.25 ea)</label>
+                <input type="number" name="Chocolate" id="chocolate">
+            </div>
 
-        <div class="group">
-          <label for="chocolate">Chocolate ($4.25 ea)</label>
-          <input type="number" name="Chocolate" id="chocolate" />
-        </div>
+            <button type="button" id="submit">Submit</button>
 
-        <button type="button" id="submit">Submit</button>
-      </form>
+            <div id="resultsContainer" class="responsive">
+                <h1 id="billing"></h1>
+                <p id="subtotal">
+                <p id="tax">
+                <p id="taxedSubtotal">
+                <p id="beReady">
+            </div>
+        </form>
     </div>
 
-    <div id="resultsContainer" class="responsive">
-      <p id="subtotal"></p>
-      <p id="tax"></p>
-      <p id="taxedSubtotal"></p>
-      <p id="beReady"></p>
-    </div>
+    
 
     <script>
-      function getQuantities() {
-        var quantities = [];
-        quantities[0] = document.getElementById("vanilla").value;
-        quantities[1] = document.getElementById("velvet").value;
-        quantities[2] = document.getElementById("creme").value;
-        quantities[3] = document.getElementById("cookies").value;
-        quantities[4] = document.getElementById("caramel").value;
-        quantities[5] = document.getElementById("strawberry").value;
-        quantities[6] = document.getElementById("lemon").value;
-        quantities[7] = document.getElementById("chocolate").value;
-        return quantities;
-      }
+        function getQuantities() {
+            var quantities = [];
+            quantities[0] = document.getElementById("vanilla").value;
+            quantities[1] = document.getElementById("velvet").value;
+            quantities[2] = document.getElementById("creme").value;
+            quantities[3] = document.getElementById("cookies").value;
+            quantities[4] = document.getElementById("caramel").value;
+            quantities[5] = document.getElementById("strawberry").value;
+            quantities[6] = document.getElementById("lemon").value;
+            quantities[7] = document.getElementById("chocolate").value;
+            return quantities;
+        }
 
-      function checkQuantities(quantities) {
-        for (i = 0; i < quantities.length; i++) {
-          if (quantities[i] < 0) {
-            alert("Can't have negative cupcakes!");
-            return false;
-          }
+        function checkQuantities(quantities) {
+            for (i = 0; i < quantities.length; i++) {
+                if (quantities[i] < 0) {
+                    alert("Can't have negative cupcakes!");
+                    return false;
+                }
+                if (quantities[i] % 1 != 0) {
+                    alert("Must have a whole number of cupcakes!");
+                    return false;
+                }
+            }
+            return true;
         }
-        return true;
-      }
 
-      function checkTime() {
-        var time = document.getElementById("pickup").value;
-        if (time == "") {
-          alert("Please select a pickup time!");
-          return false;
-        } else {
-          return time;
+        function checkTime() {
+            var time = document.getElementById("pickup").value;
+            if (time == "") {
+                alert("Please select a pickup time!");
+                return false;
+            }
+            else {
+                return time;
+            }
         }
-      }
 
-      function calculateSubtotal(quantities) {
-        var prices = [3.75, 4.25];
-        var sum = 0;
-        for (i = 0; i < 6; i++) {
-          sum += quantities[i] * prices[1];
-        }
-        for (i = 6; i < 6; i++) {
-          sum += quantities[i] * prices[2];
-        }
-        return sum;
-      }
+        function calculateSubtotal(quantities) {
+                var prices = [3.75, 4.25];
+                var sum = 0;
+                for (i = 0; i < 6; i++) {
+                    sum += quantities[i] * prices[0];
+                }
+                for (i = 6; i < 6; i++) {
+                    sum += quantities[i] * prices[1];
+                }
+                return sum;
+            }
 
-      function printInfo(subtotal, tax, final, time) {
-        document.getElementById("subtotal").innerHTML =
-          "Subtotal: $" + subtotal;
-        document.getElementById("tax").innerHTML = "Tax: $" + tax;
-        document.getElementById("taxedSubtotal").innerHTML =
-          "Final total: $" + final;
-        document.getElementById("beReady").innerHTML =
-          "<b>Please come to collect your order within <i>15 minutes</i>.</b><br>Your scheduled pickup time is: " +
-          time +
-          "!";
-      }
+        function printInfo(subtotal, tax, final, time) {
+            document.getElementById("billing").innerHTML = "Your Order Total";
+            document.getElementById("subtotal").innerHTML = "Subtotal: $" + subtotal;
+            document.getElementById("tax").innerHTML = "Tax: $" + tax;
+            document.getElementById("taxedSubtotal").innerHTML = "Final total: $" + final;
+            document.getElementById("beReady").innerHTML = "<b>Please come to collect your order within <i>15 minutes.<br>CASH ONLY!</i></b><br>Your scheduled pickup time is: " + time + "!";
+        }
 
-      document.getElementById("submit").onclick = function driver() {
-        if (checkTime() != false) {
-          time = checkTime();
+        document.getElementById("submit").onclick = function driver(){
+            if (checkTime() != false) {
+                time = checkTime();
+            }
+            var quantities = getQuantities();
+            if (checkQuantities(quantities)) {
+                var subtotal = parseFloat(calculateSubtotal(quantities)).toFixed(2);
+                var tax = parseFloat(subtotal * 0.0625).toFixed(2);
+                var final = (parseFloat(subtotal) + parseFloat(tax)).toFixed(2);
+                printInfo(subtotal, tax, final, time);
+            }
         }
-        var quantities = getQuantities();
-        if (checkQuantities(quantities)) {
-          var subtotal = parseFloat(calculateSubtotal(quantities)).toFixed(2);
-          var tax = parseFloat(subtotal * 0.0625).toFixed(2);
-          var final = (parseFloat(subtotal) + parseFloat(tax)).toFixed(2);
-          printInfo(subtotal, tax, final, time);
-        }
-      };
     </script>
-  </body>
+
+</body>
+
 </html>
