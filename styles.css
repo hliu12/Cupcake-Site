@@ -157,7 +157,7 @@
 #footer {
   height: 50px;
   background-color: lightblue;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   vertical-align: center;
