@@ -151,17 +151,23 @@ a {
 }
 
 #footer {
-    height: 100px;
-    background-color: lightgray;
-  }
-  
+  height: 50px;
+  background-color: lightblue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  vertical-align: center;
+  font-family: SnappyDresser;
+  text-align: center;
+}
+
 #footer-list {
-height: 100px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #footer-list li {
-list-style: none;
+  list-style: none;
 }
