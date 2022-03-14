@@ -8,6 +8,11 @@
   src: url(SnappyDresserRegular-L35nG.ttf);
 }
 
+@font-face {
+    font-family: Hyogo;
+    src: url(Hyogo-Black.otf);
+}
+
 #header {
   height: 75px;
   background-color: lightblue;
