@@ -95,7 +95,6 @@ a {
 }
 
 #footer {
-  display: flex;
   height: 50px;
   background-color: lightblue;
   position: relative;
