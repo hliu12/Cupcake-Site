@@ -46,10 +46,21 @@ html {
 
 #img-slider-div {
   display: flex;
-  flex-direction: row;
   height: 550px;
   background-color: pink;
   justify-content: center;
+}
+
+#title-div {
+  height: 100px;
+  background-color: pink;
+  text-align: center;
+}
+
+#title {
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .arrow {
