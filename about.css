@@ -39,6 +39,17 @@ body {
   justify-content: space-evenly;
 }
 
+#burger {
+  display: none;
+}
+
+#burger div {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(149, 92, 167);
+  margin: 5px;
+}
+
 a {
   text-decoration: none;
   font-size: 18px;
@@ -114,4 +125,32 @@ a {
 
 #footer-list li {
   list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+  #header-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    width: 100vw;
+    background-color: rgb(149, 92, 167);
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #header-items li {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  #burger {
+    display: block;
+    margin-right: 40px;
+    cursor: pointer;
+  }
 }
