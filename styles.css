@@ -14,8 +14,9 @@
 }
 
 #header-list {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: SnappyDresser;
   font-weight: bold;
+  font-size: 18px;
   height: 75px;
   display: flex;
   justify-content: space-between;
@@ -33,12 +34,12 @@
 }
 
 #header-items li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 #header-items li a:hover {
-  color: pink;
+  color:rgb(149, 92, 167);
 }
 
 #logo {
@@ -126,13 +127,14 @@
   flex-direction: column;
   padding-top: 25px;
   background-color: rgb(185, 255, 185);
+  font-family: SnappyDresser;
   text-align: center;
   align-items: center;
   width: 33vw;
 }
 
 .info-container img {
-  width: 250px;
+  /* width: 250px; */
   height: 150px;
   /* height: 150px; */
   /* min-width: 100%; */
@@ -148,6 +150,9 @@
 .info-desc {
   margin-top: 25px;
   margin-bottom: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 #footer {
