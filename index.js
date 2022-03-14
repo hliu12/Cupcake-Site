@@ -21,4 +21,12 @@ $(document).ready(function () {
       });
     }
   });
+
+  $("#burger").on("click", () => {
+    if ($("#header-items").css("display") == "none") {
+      $("#header-items").css("display", "flex");
+    } else {
+      $("#header-items").css("display", "none");
+    }
+  });
 });
