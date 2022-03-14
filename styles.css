@@ -29,6 +29,13 @@ body {
   src: url(Hyogo-regular.otf);
 }
 
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: SnappyDresser, sans-serif;
+}
+
 #header {
   height: 75px;
   background-color: lightblue;
@@ -55,7 +62,7 @@ body {
 }
 
 #header-items li a {
-  color: rgb(0, 0, 0);
+  color: white;
   text-decoration: none;
 }
 
