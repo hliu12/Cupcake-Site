@@ -12,39 +12,12 @@ body {
   background-color: #fff0f5;
 }
 
-#header {
-  height: 75px;
-  background-color: lightblue;
-}
-
-#header-list {
-  height: 75px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo {
-  display: flex;
-  justify-content: left;
-  margin-left: 20px;
-}
 
 a {
   text-decoration: none;
   font-size: 18px;
   color: whitesmoke;
   font-family: SnappyDresser, sans-serif;
-}
-
-#header-items {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#header-items li {
-  list-style: none;
-  margin-right: 40px;
 }
 
 * {
@@ -172,7 +145,4 @@ a {
   height: 50px;
   line-height: 50px;
   font-style: italic;
-}
-#footer-list li {
-  list-style: none;
 }
