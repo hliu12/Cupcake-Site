@@ -5,35 +5,62 @@
         <title> Cupcake Shop </title>
         <link type = "text/css" href = "styles.css" rel = "stylesheet">
         <style> 
-        
+            body {
+                font-size: 20px;
+            }
+            
+            #header h1 {
+                font-family: SnappyDresser;
+                padding-top: 10px;
+            }
             #catering_info {
-                border: solid 3px pink;
-                background-color: pink;
                 padding-bottom: 10px;
+                background-color: #FFF0F5;
+                border: 3px solid black;
+            }
+            
+            #catering_info h1 {
+                padding-top: 10px;
+                font-family: SnappyDresser;
+            }
+            
+            #catering_info p {
+                line-height: 25px;
+            }
+        
+            #catering_info ul {
+                padding-bottom: 5px;
+            }
+            
+            #catering_info li {
+                padding-bottom: 5px;
             }
             
             form h1 {
                 font-size: 1.5em;
                 text-align: center;
                 padding-top: 10px;
-            }
-            
-            body {
-                background-color: white;
+                font-family: SnappyDresser;
+                color: #D2691E;
             }
             
             form {
                 border-top: 1px solid black;
                 padding-bottom: 5px;
+                background-color: #FFEBCD
             }
             
             form .form-group {
                 padding-bottom: 10px;
                 text-align: center;
+                color: #D2691E;
             }
             
-            
-            
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
             
         </style>
     </head>
@@ -49,8 +76,6 @@
         <nav id = "navbar">
             <div class = "container">
                 <ul>
-                    <li> <a href = "https://azou02.github.io/web-programming/front-page.html" > Home </a> </li>
-                    <li> <a href = "https://azou02.github.io/web-programming/Services.html"> Our Services </a> </li>
                     
                     
                 </ul>
@@ -59,11 +84,12 @@
         
         <section id = "catering_info">
             <div class = "container">
-                <h1> Catering Since 2010 </h1>
+                <h1> Make Your Special Day One You Can't Forget </h1> <br>
                 <p> Allow us to make your next special event truly one to remember!
                     <br>
                     Pamper your guests with our gourmet cupcakes specially desgined to serve any occasion! Not only will you get to enjoy our hand-made, freshly designed cupcakes, but we also provide a sampling of our new baked treats planned to hit our stores in 2023. For more information about location and processing, please fill out the form below or give us a call.
-                    <br>            
+                    <br>   
+                    <br>         
                 </p>
                 <ul> Cupcake Shop caters for the following events: </ul>
                     <li> Birthday Parties </li>
@@ -73,6 +99,7 @@
                     <li> Graduations </li>
                     <li> Holidays </li>
                     <li> Baby Showers </li>
+                <br>
                 <p> Please note that Cupcake Shop only delivers within the state of Massachusetts, and that all catering requests must be made at least 3 business days in advance.
             </div>
             
@@ -117,11 +144,17 @@
             </div>
         </form>
         
-        <footer id = "footer">
-            <div class = "container">
-                <p> Copyright &copy; 2022 Ichiban Sushi </p>
-            </div>
+        <footer id="footer">
+          <ul id="footer-list">
+            <li class="footer-item">Home</li>
+            <li class="footer-item">Contact</li>
+            <li class="footer-item">Careers</li>
+            <li class="footer-item">Policies</li>
+            <li class="footer-item">Privacy</li>
+          </ul>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="index.js"></script>
         
     </body>
 </html>
