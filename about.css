@@ -104,3 +104,25 @@ a {
   text-align: center;
   font-family: Hyogo, sans-serif;
 }
+
+#footer {
+  height: 50px;
+  background-color: lightblue;
+  position: relative;
+  margin-top: -50px;
+  width: 100%;
+  vertical-align: center;
+  font-family: HyogoRegular;
+  text-align: center;
+}
+
+#footer-text {
+  height: 50px;
+  line-height: 50px;
+  font-style: italic;
+  font-size: 17px;
+}
+
+#footer-list li {
+  list-style: none;
+}
