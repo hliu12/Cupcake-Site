@@ -13,6 +13,11 @@
     src: url(Hyogo-Black.otf);
 }
 
+@font-face {
+    font-family: HyogoRegular;
+    src: url(Hyogo-Regular.otf);
+}
+
 #header {
   height: 75px;
   background-color: lightblue;
