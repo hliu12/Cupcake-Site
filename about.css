@@ -106,14 +106,8 @@ a {
 }
 
 #footer {
-  height: 50px;
-  background-color: lightblue;
-  position: relative;
-  margin-top: -50px;
-  width: 100%;
-  vertical-align: center;
-  font-family: HyogoRegular;
-  text-align: center;
+  position: fixed;
+  bottom: 0;
 }
 
 #footer-text {
