@@ -74,6 +74,11 @@ a {
   margin-left: 40px;
 }
 
+#logo a {
+  color: rgb(153, 0, 255);
+  font-weight: bolder;
+}
+
 #burger {
   display: none;
 }
@@ -132,7 +137,6 @@ a {
 }
 
 #slider-images {
-  border: 1px solid black;
   position: relative;
   overflow: hidden;
   float: left;
