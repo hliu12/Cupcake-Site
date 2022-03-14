@@ -9,13 +9,13 @@
 }
 
 @font-face {
-    font-family: Hyogo;
-    src: url(Hyogo-Black.otf);
+  font-family: Hyogo;
+  src: url(Hyogo-Black.otf);
 }
 
 @font-face {
-    font-family: HyogoRegular;
-    src: url(Hyogo-regular.otf);
+  font-family: HyogoRegular;
+  src: url(Hyogo-regular.otf);
 }
 
 #header {
@@ -113,7 +113,7 @@
   margin-top: 80px;
 }
 
-#slider-images
+#slider-images {
   border: 1px solid black;
   position: relative;
   overflow: hidden;
@@ -167,8 +167,8 @@
 #footer {
   height: 50px;
   background-color: lightblue;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  margin-top: -50px;
   width: 100%;
   vertical-align: center;
   font-family: HyogoRegular;
