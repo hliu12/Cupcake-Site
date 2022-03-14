@@ -16,39 +16,6 @@
 body {
   background-color: #fff0f5;
 }
-#header {
-  height: 75px;
-  background-color: lightblue;
-}
-
-#header-list {
-  height: 75px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#logo {
-  display: flex;
-  justify-content: left;
-  margin-left: 20px;
-}
-
-#header-items {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#burger {
-  display: none;
-}
-
-#burger div {
-  width: 25px;
-  height: 2px;
-  background-color: rgb(149, 92, 167);
-  margin: 5px;
-}
 
 a {
   text-decoration: none;
