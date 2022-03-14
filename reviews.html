@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
+        <title> Cupckae Shop </title>
+        <link type = "text/css" href = "styles.css" rel = "stylesheet">
         <style>
         
             #intro {
@@ -11,49 +12,30 @@
                 background-position: center center;
                 background-size: cover;
                 background-attachment: fixed;
+                border: 3px solid black;
             }
             
             h1 {
                 text-align: center;
             }
             
-            #one {
-                margin-bottom: 10px;
+            #header h1 {
+                text-align: left;
             }
             
-            #two {
-                margin-bottom: 10px;
+            p {
+                margin-bottom: 30px;
             }
             
             #intro p {
                 color: black;
-            }
-            
-            .box {
-                width: 100%;
-                height: auto;
-            }
-            
-            .box h1 {
-                color = white;
-            }
-            
-            #intro a {
-                color: white;
+                text-align: center;
+                font-size: 24px;
             }
             
             #intro h1 {
                 text-align: center;
                 font-size: 56px;
-            }
-            
-            #intro p {
-                text-align: center;
-                font-size: 24px;
-            }
-            
-            #intro a:hover {
-                color: pink;
             }
             
             #one {
@@ -70,32 +52,64 @@
                 box-sizing: border-box;
             }
             
-            #welcome h1 {
-                text-align: center;
-                color: #333;
+            #three {
+                background-color: #fff;
+                float: left;
+                width: 48%;
+                box-sizing: border-box;
             }
             
-            #takeout h1 {
-                text-align: center;
-                color: white;
+            #four {
+                background-color: #fff;
+                float: right;
+                width: 50%;
+                box-sizing: border-box;
             }
             
-            #welcome p {
-                text-align: center;
-                color: #333;
+            #five {
+                background-color: #fff;
+                float: left;
+                width: 48%;
+                box-sizing: border-box;
             }
             
-            #takeout {
+            #six {
+                background-color: #fff;
+                float: right;
+                width: 50%;
+                box-sizing: border-box;
+            }
+            
+            #seven h1 {
                 text-align: center;
-                color: white;
+            }
+            
+            #seven {
+                text-align: center;
             }
             
             @media(max-width: 600px) {
-                #welcome {
+                #one {
                     float: none;
                     width: 100%;
                 }
-                #takeout {
+                #two {
+                    float: none;
+                    width: 100%;
+                }
+                #three {
+                    float: none;
+                    width: 100%;
+                }
+                #four {
+                    float: none;
+                    width: 100%;
+                }
+                #five {
+                    float: none;
+                    width: 100%;
+                }
+                #six {
                     float: none;
                     width: 100%;
                 }
@@ -104,6 +118,10 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
+            }
+            
+            #thanks {
+                border: solid 5px black;
             }
             
             #thanks h1 {
@@ -118,21 +136,27 @@
         
     </head>
     <body>
-        <header id="header">
-            <ul id="header-list">
-              <div id="logo">
-                <a href="index.html">Logo or Pic</a>
-              </div>
-              <div id="header-items">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="order.html">Order</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="catering.html">Catering</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-              </div>
-            </ul>
-          </header>
+        <header id = "header"> 
+            <div class = "container">
+                <h1> Cupcake Shop </h1>
+            
+          
+            
+            
+            
+            </div>
+        </header>
+        
+        <nav id = "navbar">
+            <div class = "container">
+                <ul>
+                    <li> <a href = "https://azou02.github.io/web-programming/Contact.html" > Contact Us </a> </li>
+                    <li> <a href = "https://azou02.github.io/web-programming/Services.html" > Our Services </a> </li>
+                    
+                    
+                </ul>
+                
+        </nav>
             
         <section id = "intro">
             <div class = "container">
@@ -158,6 +182,9 @@
             </div>
         </section>
         
+        <div class = "clr">
+        </div>
+        
         <section id = "three">
             <div class = "container">
                 <h1> "Secret gem that you HAVE to visit if you're ever in MA" </h1>
@@ -173,6 +200,9 @@
                 </p>
             </div>
         </section>
+        
+        <div class = "clr">
+        </div>
         
         <section id = "five">
             <div class = "container">
@@ -190,6 +220,9 @@
             </div>
         </section>
         
+        <div class = "clr">
+        </div>
+        
         <section id = "seven">
             <div class = "container">
                 <h1> "Beautifully decorated and wicked delicious" </h1>
@@ -197,7 +230,6 @@
                 </p>
             </div>
         </section>
-        
         
         <div class = "clr">
         </div>
