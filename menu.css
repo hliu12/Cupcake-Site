@@ -1,164 +1,167 @@
-
 @font-face {
-    font-family: SnappyDresser;
-    src: url(SnappyDresserRegular-L35nG.ttf);
+  font-family: SnappyDresser;
+  src: url(SnappyDresserRegular-L35nG.ttf);
 }
 
 @font-face {
-    font-family: Hyogo;
-    src: url(Hyogo-Black.otf);
+  font-family: Hyogo;
+  src: url(Hyogo-Black.otf);
 }
 
 body {
-    background-color: #FFF0F5;
+  background-color: #fff0f5;
 }
 
 #header {
-    height: 75px;
-    background-color: lightblue;
+  height: 75px;
+  background-color: lightblue;
 }
 
 #header-list {
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
-    display: flex;
-    justify-content: left;
-    margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
 }
 
 a {
-    text-decoration: none;
-    font-size: 18px;
-    color: whitesmoke;
-    font-family: SnappyDresser, sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  color: whitesmoke;
+  font-family: SnappyDresser, sans-serif;
 }
 
 #header-items {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #header-items li {
-    list-style: none;
-    margin-right: 40px;
+  list-style: none;
+  margin-right: 40px;
 }
 
-*{margin: 0; padding: 0;} 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .all {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
 }
 
 .top {
-    margin-top: 30px;
-    width: 80%;
-    max-width: 1000px;
+  margin-top: 30px;
+  width: 80%;
+  max-width: 1000px;
 }
 .menu-header,
 .choose,
 .price-header {
-    display: flex;
-    justify-content: center;
-    color: #81D8D0;
+  display: flex;
+  justify-content: center;
+  color: #81d8d0;
 }
 
 .menu-header {
-    font-family: SnappyDresser, sans-serif;
+  font-family: SnappyDresser, sans-serif;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .everyday {
-    color: #81D8D0;
-    font-family: Hyogo, sans-serif;
-    display: flex;
-    justify-content: center;
+  color: #81d8d0;
+  font-family: Hyogo, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .price-header {
-    font-family: Hyogo, sans-serif;
+  font-family: Hyogo, sans-serif;
 }
 
 .images {
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    max-width: 230px;
-    max-height: 230px;
-    margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  max-width: 230px;
+  max-height: 230px;
+  margin-bottom: 12px;
 }
 
 .menu {
-    max-height: 800px;
-    max-width: 1000px;
-    gap: 12px;
-    margin-bottom: 24px;
+  max-height: 800px;
+  max-width: 1000px;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .top_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  gap: 30px;
 }
 
 .bottom_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 30px;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  gap: 30px;
 }
 
 .flavor,
 .description,
 .price {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flavor {
-    font-family: SnappyDresser, sans-serif;
-    margin: 10px;
+  font-family: SnappyDresser, sans-serif;
+  margin: 10px;
 }
 
 .price {
-    font-family: Hyogo, sans-serif;
-    color:#704214;
+  font-family: Hyogo, sans-serif;
+  color: #704214;
 }
 
 .description {
-    font-family: SnappyDresser, sans-serif;
-    color: #704214;
-    max-width: 250px;
+  font-family: SnappyDresser, sans-serif;
+  color: #704214;
+  max-width: 250px;
 }
 
 #footer {
   height: 50px;
   background-color: lightblue;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  margin-top: -10px;
   width: 100%;
   vertical-align: center;
   font-family: HyogoRegular;
