@@ -14,6 +14,9 @@
     padding: 0px;
 }
 
+body {
+  background-color: #FFF0F5;  
+}
 #header {
     height: 75px;
     background-color: lightblue;
