@@ -93,25 +93,3 @@ a {
   text-align: center;
   font-family: Hyogo, sans-serif;
 }
-
-#footer {
-  height: 50px;
-  background-color: lightblue;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  vertical-align: center;
-  font-family: HyogoRegular;
-  text-align: center;
-}
-
-#footer-list {
-  height: 50px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#footer-list li {
-  list-style: none;
-}
