@@ -263,11 +263,6 @@ a {
   }
 }
 
-#footer {
-  position: fixed;
-  bottom: 0;
-}
-
 @media screen and (max-width: 575px) {
   #slider-images img {
     width: 400px;
