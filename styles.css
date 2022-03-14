@@ -98,7 +98,7 @@
   margin-top: 80px;
 }
 
-#slider-images {
+#slider-images
   border: 1px solid black;
   position: relative;
   overflow: hidden;
@@ -151,7 +151,9 @@
 
 #footer {
   height: 50px;
-  background-color: lightgray;
+  background-color: lightblue;
+  position: fixed;
+  bottom: 0;
 }
 
 #footer-list {
