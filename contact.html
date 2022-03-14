@@ -1,90 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <style>
-      h1 {
-        text-align: center;
-      }
+        *{margin: 0; padding: 0;}
 
-      #form {
-        display: flex;
-        justify-content: center;
-      }
+        h1 {
+            text-align: center;
+            margin: 20px;
+            font-size: 45px;
+            font-family: SnappyDresser;
+        }
 
-      textarea {
-        resize: none;
-        width: 600px;
-        height: 300px;
-      }
+        h2 {
+            font-size: 30px;
+            font-family: SnappyDresser;
+        }
 
-      ::placeholder {
-        font-family: Arial;
-      }
+        h2, p {
+            margin-bottom: 20px;
+        }
 
-      #messageLabel {
-        display: block;
-      }
+        #container {
+            display: flex;
+        }
+
+        #info {
+            flex: 1;
+            text-align: center;
+        }
+
+        #form {
+            display: flex;
+            flex: 1;
+            text-align: left;
+            font-family: SnappyDresser;
+        }
+
+        textarea {
+            resize: none;
+            width: 600px;
+            height: 300px;
+        }
+
+        ::placeholder {
+            font-family: Arial;
+        }
+
+        #messageLabel {
+            display: block;
+        }
+
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header id="header">
-      <ul id="header-list">
-        <div id="logo">
-          <a href="index.html">Logo or Pic</a>
-        </div>
-        <div id="header-items">
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="order.html">Order</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="catering.html">Catering</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-        </div>
-      </ul>
+        <ul id="header-list">
+          <div id="logo">
+            <a href="index.html">Logo or Pic</a>
+          </div>
+          <div id="header-items">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </div>
+        </ul>
     </header>
 
-    <h1><strong>Got Questions?</strong></h1>
+    <h1><strong>Questions?</strong></h1>
 
-    <div id="form">
-      <form action="email.php" onsubmit="return validate();">
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Your preferred name"
-        /><br /><br />
+    <div id="container">
+        <div id="info">
+            <h2>Call Us</h2>
+            <p>781.763.1649</p>
 
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Your email address"
-        /><br /><br />
+            <h2>Visit Us</h2>
+            <p>777 Massachusetts Avenue, Cambridge, MA 02139</p>
 
-        <label for="message" id="messageLabel">Message:</label>
-        <textarea id="message" placeholder="Your message here..."></textarea
-        ><br /><br />
+            <h2>Hours</h2>
+            <p>Monday-Friday: 8am - 6:30pm<br>Saturday-Sunday: 12pm - 5pm</p>
 
-        <input type="submit" value="Submit" />
-      </form>
+            <h2>Special Orders</h2>
+            <p>In a pinch? Use our online <a href="order.html">order form!</a><br>Looking to order for large events? Check out our <a href="catering.html">catering page!</a></p>
+        </div>
+
+        <div id="form">
+            <form onsubmit="return validate();">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your preferred name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your email address"><br><br>
+
+                <label for="message" id="messageLabel">Message:</label>
+                <textarea id="message" placeholder="Your message here..."></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
     <script>
-      function validate() {
-        if (document.getElementById("name").value == "") {
-          alert("Please give us your name!");
-          return false;
-        } else if (document.getElementById("email").value == "") {
-          alert("Cannot contact us without a sender email address!");
-          return false;
-        } else if (document.getElementById("message").value == "") {
-          alert("Cannot send blank message!");
-          return false;
+        function validate() {
+            if (document.getElementById("name").value == "") {
+                alert("Please give us your name!");
+                return false;
+            }
+            else if (document.getElementById("email").value == "") {
+                alert("Cannot contact us without a sender email address!");
+                return false;
+            }
+            else if (document.getElementById("message").value == "") {
+                alert("Cannot send blank message!");
+                return false;
+            }
+            else {
+                alert("Your message has been received! Please allow up to two business days for us to respond.")
+            }
         }
-      }
     </script>
-  </body>
+</body>
 </html>
