@@ -119,12 +119,12 @@ a {
 
 #prev-arrow {
   position: relative;
-  margin-right: -15px;
+  margin-right: 25px;
 }
 
 #next-arrow {
   position: relative;
-  margin-left: -15px;
+  margin-left: 25px;
 }
 
 #slider-outer {
@@ -204,7 +204,7 @@ a {
   list-style: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #slider-images img {
     width: 500px;
     height: 300px;
@@ -263,10 +263,10 @@ a {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 650px) {
   #slider-images img {
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
   }
 
   #img-slider-div {
@@ -275,10 +275,24 @@ a {
 
   #prev-arrow,
   #next-arrow {
-    margin-top: 110px;
+    margin-top: 75px;
+  }
+
+  #prev-arrow {
+    position: relative;
+    margin-right: 5px;
+  }
+
+  #next-arrow {
+    position: relative;
+    margin-left: 5px;
   }
 
   .arrow {
     width: 40px;
+  }
+
+  #footer-text {
+    font-size: 14px;
   }
 }
