@@ -88,13 +88,13 @@ a {
 #img-slider-div {
   display: flex;
   height: 550px;
-  background-color: pink;
+  background-color: #fff0f5;
   justify-content: center;
 }
 
 #title-div {
   height: 70px;
-  background-color: pink;
+  background-color: #fff0f5;
   text-align: center;
 }
 
